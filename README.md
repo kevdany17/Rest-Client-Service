@@ -50,7 +50,7 @@ Servicio de Cliente Rest para Laravel
   **GET**
   headers is optional, default null
   ```
-    $service->post($urel, $headers);
+    $service->get($urel, $headers);
   ```
    **POST**
   - headers is optional,headers is default null
