@@ -1,5 +1,5 @@
 {
-    "name": "impulzo/rest_client_service",
+    "name": "impulzo/rest-client-service",
     "description": "Cliente de Servicios REST Para Laravel",
     "type": "library",
     "license": "MIT",
