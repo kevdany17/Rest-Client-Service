@@ -4,10 +4,14 @@ Servicio de Cliente Rest para Laravel
 ## Installation
   On Laravel And Lumen
   
-  add composer.json
+  edit composer.json, add line in require: 
   ```
-  "impulzo/rest_client_service": "dev-master"
+  "impulzo/rest_client_service": "dev-master",
   
+  ```
+  or execute
+  ```
+    composer require impulzo/rest_client_service
   ```
 ## Setting
   **Laravel**
