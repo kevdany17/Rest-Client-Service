@@ -6,8 +6,15 @@ use PHPUnit\Framework\TestCase;
 
 class RestClientTest extends TestCase
 {
-	public function testGet()
+	// protected function setUp()
+	// {
+	// 	$this->restClient = new \RestClient\RestClient();
+	// }
+	public function testSuccessGet()
 	{
-		$this->assertTrue(true);
+		echo "test run";
+		$reponse = null; //$this->restClient->get("");
+		echo $response;
+		$this->assertIsObject($response);
 	}
 }

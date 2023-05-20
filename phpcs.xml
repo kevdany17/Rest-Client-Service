@@ -4,7 +4,6 @@
 
     <!-- Specify the standard to use -->
     <rule ref="PSR12"/>
-
     <rule ref="Generic.WhiteSpace.DisallowTabIndent">
         <severity>0</severity>
     </rule>
