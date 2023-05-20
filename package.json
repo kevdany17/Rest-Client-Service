@@ -1,0 +1,33 @@
+{
+  "name": "rest-client-service",
+  "version": "1.0.0",
+  "description": "utils npm",
+  "main": "''",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "composer run phpcs",
+    "precommit": "npm run lint"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevdany17/rest-client-service.git"
+  },
+  "author": "Kevin Hernández",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevdany17/rest-client-service/issues"
+  },
+  "homepage": "https://github.com/kevdany17/rest-client-service#readme",
+  "devDependencies": {
+    "husky": "^8.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
+  }
+}
