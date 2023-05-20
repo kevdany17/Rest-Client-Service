@@ -17,6 +17,11 @@
       "Impulzo\\RestClientService\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.7"
   }

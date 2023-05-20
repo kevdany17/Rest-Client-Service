@@ -12,7 +12,7 @@ class RestClient
 		if ($url == "") {
 			throw new Exception("La url esta Vacía.");
 		}
-		$response = array();
+		$response = null;
 		try {
 			$curl = curl_init();
 			curl_setopt($curl, CURLOPT_URL, $url);
@@ -23,11 +23,11 @@ class RestClient
 			$curl_response = curl_exec($curl);
 			$response = json_decode($curl_response);
 			curl_close($curl);
-			if ($response == null) {
+			if ($response === null) {
 				$response = $curl_response;
 			}
 		} catch (\Exception $ex) {
-			throw new \Exception($ex->getMessage());
+			throw new \Exception("Get Error: " . $ex->getMessage());
 		}
 		return $response;
 	}
@@ -42,6 +42,7 @@ class RestClient
 			$curl = curl_init();
 			curl_setopt($curl, CURLOPT_URL, $url);
 			curl_setopt($curl, CURLOPT_POST, true);
+			curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
 			if ($headers != null) {
 				curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 				curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
