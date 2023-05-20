@@ -13,8 +13,8 @@ class RestClientServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('RestClientFacade',function(){
-            return new \Impulzo\RestClientService\Libraries\Facade\RestClientFacade();
+        $this->app->singleton('RestClientFacade', function () {
+            return new \Impulzo\RestClientService\Libraries\Facade\RestClient();
         });
     }
 
