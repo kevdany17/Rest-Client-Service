@@ -1,6 +1,9 @@
 # REST CLIENT SERVICE
 Servicio de Cliente Rest para Laravel
 
+- In the new version remplace **RestClientFacade** for **RestClient**.
+- Versión 2.0 - 22 May 2023 deployed in master.
+
 ## Installation
   On Laravel And Lumen
   
@@ -30,12 +33,12 @@ Servicio de Cliente Rest para Laravel
 ## Use
   **import**
   ```
-    use Impulzo\RestClientService\Libraries\Facade\RestClientFacade;
+    use Impulzo\RestClientService\Libraries\RestClient;
   ```
   and 
   ```
     //Inyect Dependency
-    public function methodName(RestClientFacade $service){
+    public function methodName(RestClient $service){
       ....
     }
     
@@ -43,14 +46,14 @@ Servicio de Cliente Rest para Laravel
     
     //Create Class
     public function methodName(){
-      $service = new RestClientFacade();
+      $service = new RestClient();
     }
   ```
   
   **GET**
   headers is optional, default null
   ```
-    $service->get($urel, $headers);
+    $service->get($url, $headers);
   ```
    **POST**
   - headers is optional,headers is default null
