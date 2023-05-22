@@ -4,9 +4,19 @@
 
     <!-- Specify the standard to use -->
     <rule ref="PSR12"/>
-
     <rule ref="Generic.WhiteSpace.DisallowTabIndent">
         <severity>0</severity>
+    </rule>
+    <rule ref="Squiz.Strings.DoubleQuoteUsage">
+        <properties>
+            <property name="ignoreNotAdjacent" value="true"/>
+        </properties>
+    </rule>
+    
+    <rule ref="Squiz.Strings.DoubleQuoteUsage.NotRequired">
+        <properties>
+            <property name="ignoreNotAdjacent" value="true"/>
+        </properties>
     </rule>
 
     <!-- Exclude directories or files from analysis -->

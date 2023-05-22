@@ -1,7 +1,12 @@
-<phpunit>
+<phpunit bootstrap="./vendor/autoload.php">
     <testsuites>
         <testsuite name="Libraries">
             <directory>./tests/Unit/Libraries</directory>
         </testsuite>
     </testsuites>
+     <filter>
+        <whitelist>
+            <directory suffix=".php">./src/Libraries/</directory>
+        </whitelist>
+    </filter>
 </phpunit>
